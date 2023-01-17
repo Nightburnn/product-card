@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			height: 600px;
+			width: 705px;
+			
+			margin: 15px auto;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 5px;
+		}
+		.card1, .card2, .card3, .card4{
+			height: 300px;
+			width: 350px;
+			box-shadow: 0px 0px 15px #333;
+			overflow: hidden;
+			position: relative;
+		}
+		img{
+			height: 300px;
+			width: 350px;
+			object-fit: cover;
+		}
+		.content{
+			position: absolute;
+			background: #36454F;
+			color: white;
+			padding: 30px;
+			line-height: 25px;
+			text-align: justify;
+			font-family: verdana;
+			border-top-left-radius: 10%;
+			border-top-right-radius: 40%;
+			bottom: -195px;
+			left: 0;
+			transition: .3;
+		}
+		.content:hover{
+			bottom: 0px;
+		}
+		.content h2{
+			padding: 10px;
+			color: tomato;
+		}
+		.content p{
+			padding: 5px;
+		}
+		.content a{
+			text-decoration: none;
+			color: orange;
+		}
+		.content a:hover{
+			color: #ccc;
+		}
+		.content button{
+			outline: none;
+			border: none;
+			background: linear-gradient(45deg, deeppink, purple);
+			height: 40px;
+			width: 180px;
+			color: white;
+			cursor: pointer;
+			font-size: 15px;
+			font-family: verdana;
+			border-radius: 5px;
+			font-weight: bolder;
+			
+		}
+		.content button:hover{
+			background: linear-gradient(-45deg, deeppink, purple);
+		}
+		@media (max-width: 768px){
+			.container{
+				grid-template-columns: repeat(1, 1fr);
+				height: 1200px;
+				width: 355px;
+				grid-gap: 10px;
+				justify-items: center;
+				margin: 40px auto;
+			}
+		}
+
+	</style>
+	<title>Product Card</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="card1">
+			<img src="https://www.nicepng.com/png/detail/867-8674375_anime-girl-by-nyancatvevo-cute-anime-girl-transparent.png" alt="">
+			<div class="content">
+				<h2>Product 1</h2>
+				<p>Anime merchandise refers to the various products based on popular anime series and characters such as clothing, accessories, toys, and collectibles.</p>
+				<a href="#">More Details</a>
+				<button>Add To Cart</button>
+			</div>
+		</div>
+
+		<div class="card2">
+			<img src="https://www.pngitem.com/pimgs/m/78-783067_cute-tsundere-anime-girl-hd-png-download.png" alt="">
+			<div class="content">
+				<h2>Product 2</h2>
+				<p>Anime merchandise refers to the various products based on popular anime series and characters such as clothing, accessories, toys, and collectibles.</p>
+				<a href="#">More Details</a>
+				<button>Add To Cart</button>
+			</div>
+		</div>
+
+
+		<div class="card3">
+			<img src="https://www.seekpng.com/png/detail/76-769627_anime-girl-render-by-anime-girl-transparent-background.png" alt="">
+			<div class="content">
+				<h2>Product 3</h2>
+				<p>Anime merchandise refers to the various products based on popular anime series and characters such as clothing, accessories, toys, and collectibles.</p>
+				<a href="#">More Details</a>
+				<button>Add To Cart</button>
+			</div>
+		</div>
+
+		<div class="card4">
+			<img src="https://www.pngmart.com/files/15/Aesthetic-Anime-Girl-PNG-Transparent-Image.png" alt="">
+			<div class="content">
+				<h2>Product 4</h2>
+				<p>Anime merchandise refers to the various products based on popular anime series and characters such as clothing, accessories, toys, and collectibles.</p>
+				<a href="#">More Details</a>
+				<button>Add To Cart</button>
+			</div>
+	</div> 
+</div>  
+</body>
+</html>
